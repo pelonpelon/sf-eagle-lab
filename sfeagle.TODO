@@ -1,0 +1,21 @@
+IMPROVEMENTS:
+  enhancements:
+   ☐ automatic tweet
+   ☐ automatic facebook
+  speedup:
+    ☐ sprites
+    ☐ better wp upload dimensions
+    ☐ compress/uglify
+  mobile:
+    ☐ slide in menu
+    ☐ mobify/jquery mobile/topcoat
+ADDITIONS:
+  staff profile page:
+   ☐ create custom post (or) regular posts accessible via phone
+  clock in:
+   ☐ why early or late
+   ☐ email at end of day with totals
+  schedule:
+  inventory:
+  staff todos:
+  staff discussion:

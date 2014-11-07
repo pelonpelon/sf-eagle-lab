@@ -1,0 +1,42 @@
+include ../common/header
+  #root
+    #page.simple.bearweekend
+      a(href=homePage)
+        img.logo(src=logo, alt='logo')
+      .content
+        header
+           span.bigtype SF&nbsp;Bear&nbsp;Weekend&nbsp;(2.0)
+        section.events
+          include ./bearweekend-db-loop.php
+              
+        section.intro
+          .thumb
+            a(href="http:/www.sfbearweekend.com")
+              img.flyer(src='images/events/sfbw_paw.jpg', alt='bearpaw')
+          article
+
+            p
+              | All truly amazing things must come to an end.
+              a(href="http://en.wikipedia.org/wiki/Bear_Magazine")  BEAR
+              |  -- The zine that started it all. Pre-earthquake
+              a(href="http://en.wikipedia.org/wiki/Rick_Redewill")  Lone&nbsp;Star&nbsp;Saloon
+              |  -- The bar that first recognized that hairy men are beautiful. Harrison Street Fair -- Those first two years were unforgettable. And
+              |  International Bear Rendezvous (IBR). For nearly 20 years Bears from all around the world would decend on San Francisco for what can only be called Bear Holy Week.
+            p
+              | The last IBR was in 2011 and San Francisco, Bear Mecca, was left without a single Bear gathering. In 2013, a new Great
+              | Meeting of the Bears was conceived. Open Source. Collaborative. Non-Hierarchical. Thus was born SF Bear Weekend 2.0. No Bear beauty
+              | contests this time around. No expensive passes, no exclusive parties. Anybody who wants to have fun surrounded by warm fuzzies is welcome.
+            p
+              | The SF Eagle intends to play a big role in the development and growth of SFBW. It's still in it's infancy. We're just getting started. We
+              | have planned a few events this weekend. You'll find even more choices over at
+              a(href="http://www.sfbearweekend.com")  SFBearWeekend.com
+              |  including information on where to stay and where to meet the fur ball of your dreams.
+            
+            p
+              | We know you'll have a great time and our Hirsute Bartenders will be waiting to welcome you to what is sure to be an amazing weekend.
+
+
+      #page-footer
+    #footer
+      include ../common/footer
+  include ../common/scripts

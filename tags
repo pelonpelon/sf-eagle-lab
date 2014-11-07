@@ -1,0 +1,12 @@
+!_TAG_FILE_FORMAT	2	/extended format/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Łukasz Korecki /lukasz@coffeesounds.com/
+!_TAG_PROGRAM_NAME	CoffeeTags	//
+!_TAG_PROGRAM_URL	https://github.com/lukaszkorecki/CoffeeTags	/GitHub repository/
+!_TAG_PROGRAM_VERSION	0.2.1	//
+dimButtons	coffee/main.coffee	/^  dimButtons = ->$/;"	f	lineno:39	object:log	type:function
+filter_calendar	coffee/main.coffee	/^  filter_calendar = (crowd) ->$/;"	f	lineno:55	object:log	type:function
+hideAll	coffee/main.coffee	/^  hideAll = ->$/;"	f	lineno:44	object:log	type:function
+log	coffee/main.coffee	/^log = (string)->$/;"	f	lineno:1	object:window	type:function
+revealAll	coffee/main.coffee	/^  revealAll = ->$/;"	f	lineno:50	object:log	type:function
+scrollTop	coffee/main.coffee	/^        \$("html,body").animate { scrollTop: target.offset().top } , 1000, ->$/;"	f	lineno:97	object:log.filter_calendar	type:function

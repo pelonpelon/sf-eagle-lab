@@ -1,0 +1,27 @@
+.tumblr {
+  margin: 40px auto 20px auto;
+  h3 {
+    text-align: center;
+  }
+  .AlpinePhotoTiles_container_class {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: $netbook) {
+      width: 65%;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+    .AlpinePhotoTiles_parent_class {
+      img {
+        max-width: 180px !important;
+        float: left !important;
+        @media screen and (max-width: $phone) {
+          width: 100% !important;
+          float: none !important;
+        }
+      }
+      margin: 0 auto;
+    }
+  }
+}

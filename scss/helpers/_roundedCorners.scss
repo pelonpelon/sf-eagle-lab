@@ -1,0 +1,14 @@
+// Rounded Corners
+
+.rc {
+  position: relative;
+  -webkit-border-radius: $rounded-corner-border-radius;
+  -moz-border-radius: $rounded-corner-border-radius;
+  -o-border-radius: $rounded-corner-border-radius;
+  border-radius: $rounded-corner-border-radius;
+  zoom: 1; }
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
+  /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
+  /* -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
+  /* -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
+

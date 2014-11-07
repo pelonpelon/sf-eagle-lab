@@ -1,0 +1,249 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*background: #697281;*/
+	text-align: left;
+	font-family: "Tahoma", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #C0C0C0;
+	background-color:#000000;
+}
+	
+t_col{
+	font-size:14px;
+	font-family:tahoma;
+	font-weight:bold;
+	color:#FFFFFF; 
+}
+
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:center;}
+
+
+html, body { text-align: center; } 
+p {text-align: left;}
+
+html, body { text-align: left; } 
+p_l{text-align: left;}
+
+html, body { text-align: center; }
+p _c{text-align: center;}
+
+
+#page
+{
+  margin: 0 auto 0 auto; 
+  margin-top:25px;
+  display: block; 
+  height:auto;
+  position: relative; 
+  overflow: hidden; 
+  /* background: url(background.png) repeat-y; */
+  width: 750px;
+}
+
+#header
+{
+background-image:url(header.png);
+background-repeat:no-repeat;
+height:156px;
+width:750px;
+}
+
+#header h1
+{
+position:relative;
+left:30px;
+top:25px;
+color:#F6F6F6;
+text-align:center;
+font-size:40px;
+font-weight:;
+font-family:Tahoma, Helvetica, sans-serif;
+}
+
+#header h2
+{
+position:relative;
+left:30px;
+top:21px;
+color:#2C2C2C;
+text-align:center;
+font-size:14px;
+font-weight:;
+font-family:Tahoma, Helvetica, sans-serif;
+}
+
+
+
+#bar
+{
+background-image:url(bar.png);
+background-repeat:no-repeat;
+height:105px;
+width:750px;
+line-height:55px;
+padding-left:200px;
+padding-right:20px;
+}
+
+#bar .link
+{
+float:left;
+text-align:center;
+height:55px;
+}
+
+#bar .link:hover
+{
+background-image:url(linkrollover.png);
+background-repeat:no-repeat;
+background-position:top;
+}
+
+
+#bar a
+{
+font-size:14px;
+font-weight:bold;
+color:#F6F6F6;
+margin-left:17px;
+margin-right:17px;
+
+}
+
+#bar a:hover
+{
+color:#FFFFFF;
+}
+
+
+
+.contentTitle
+{
+width:676px;
+height:37px;
+margin-top:20px;
+margin-left:25px;
+margin-right:25px;
+margin-bottom:10px;
+background-repeat:no-repeat;
+
+}
+
+.contentTitle h1
+{
+margin-left:10px;
+padding-top:8px;
+font-size:20px;
+font-weight:;
+color:#FFFFFF;
+}
+
+.comments
+{
+font-size:11px;
+font-style:italic;
+}
+
+.contentText
+{
+width:800px;
+padding-left:0px;
+padding-right:0px;
+font-size:14px;
+font-family:tahoma;
+color:#C0C0C0;
+line-height:20px;
+letter-spacing:-0px;
+}
+.contentText t1
+{
+position:relative;
+color:#FFFFFF;
+font-size:11px;
+text-align:left;
+font-weight:normal;
+font-family:tahoma;
+}
+.contentText t2
+{
+color:#FFFFFF;
+font-size:23px;
+font-weight:bold;
+font-family:Helvetica;
+}
+.contentText t4
+{
+color:#FFFFFF;
+font-size:18px;
+font-family:Helvetica;
+}
+.contentText t3 {text-decoration:underline;}
+
+a
+{
+text-decoration:none;
+color:#008080;
+border-bottom:1px dashed #2a2a2a;
+}
+
+a:hover
+{
+color:#8F8F8F;
+border-bottom:1px dotted #2A2A2A;
+}
+
+
+#footer {
+width: 750px;
+height:53px;
+background: url(footer.png) no-repeat;
+text-align:center;
+font-size:9px;
+color:#2A2A2A;
+padding-top:25px;
+}
+
+#pic1 { vertical-align: top; }
+
+table {
+border: 2px #2b2b2b solid;
+width: 90%;
+height: 150px;
+}
+td {
+border: 2px #000000 solid;
+width: 0%;
+text-align:center;
+font-size:13px;
+color:#FFFFFF;
+}
+
+p.3 {
+	text-align:justify;
+       }
+p.thicker {font-weight:900;}
+h2 p {text-align:center;}
+
+
+#tab1 { vertical-align: top; }
+/*#example2 { text-align: center; }*/
+
+#pol { color: white;
+font-size: small; }
+
+#pol .link a:link 
+{ color: #ffffff; }
+
+div#samples img {width:12%; height:auto;}
+#page table tbody tr td p + p {text-align:center;}

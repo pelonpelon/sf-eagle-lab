@@ -1,0 +1,88 @@
+include common/header
+  #root
+    #page.simple.merch
+      a(href=homePage)
+        img.logo(src=logo, alt='logo')
+      .content
+        header.cf
+          span Hoodies Tanks & Tees
+        section
+          article
+            .samples
+              img(src='images/merch/tee-red-front.jpg', alt='Red T-Shirt (front)')
+              img(src='images/merch/tank-white-front.jpg', alt='White Tanktop (front)')
+              img(src='images/merch/tank-gray-front.jpg', alt='Gray Tanktop (front)')
+              img(src='images/merch/hoodie-gray-front.jpg', alt='Gray Hoodie (front)')
+              img(src='images/merch/hoodie-gray-back.jpg', alt='Gray Hoodie (back)')
+              img(src='images/merch/hoodie-black-front.jpg', alt='Black Hoodie (front)')
+              img(src='images/merch/hoodie-black-back.jpg', alt='Black Hoodie (back)')
+            #hoodiequality
+              | Hoodies are 80% cotton / 20% polyester
+              br
+              | Beautiful and built to last
+              br
+              br
+              | ... models not included ...
+            table
+              tr
+                td
+                  form(action='merch-email.html', method='get')
+                    input(type='hidden', name='cmd', value='_s-xclick')
+                    input(type='hidden', name='hosted_button_id', value='NFJKF939UUQT2')
+            table
+              tr
+                td
+                  input(type='hidden', name='on0', value='ITEMS')
+                  | CHOOSE YOUR MAKE AND MODEL
+                  br
+                  | all prices in U.S. dollars
+              tr
+                td
+                  select(name='os0')
+                    option(value='T-SHIRT-BLACK')
+                      | T-SHIRT (black) $18.00
+                    option(value='T-SHIRT-RED')
+                      | T-SHIRT (red) $25.00
+                    option(value='T-SHIRT-LONG-SLEEVE')
+                      | LONG SLEEVE T (black: not shown) $30.00
+                    option(value='TANKTOP-WHITE')
+                      | TANKTOP (white) $25.00
+                    option(value='TANKTOP-GRAY')
+                      | TANKTOP (gray) $25.00
+                    option(value='HOODIE-GRAY')
+                      | HOODIE (gray) $55.00
+                    option(value='HOODIE-BLACK')
+                      | HOODIE (black) $55.00
+              tr
+                td
+                  input(type='hidden', name='on1', value='SIZE')
+                  | SIZE
+              tr
+                td
+                  select(name='os1')
+                  option(value='XXL')
+                    | XXL
+                  option(value='XL')
+                    | XL
+                  option(value='L')
+                    | L
+                  option(value='M')
+                    | M
+                  option(value='S')
+                    | S
+              tr
+                td
+                  input(type='hidden', name='currency_code', value='USD')
+                  input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif',
+                  name='submit', alt='PayPal - The safer, easier way to pay online!')
+              tr
+                td
+                  p
+                    | *shipping rate applies within the continental U.S. only - International rate will vary please email info@sf-eagle.com for information
+                  p
+                    a(href='policy.html') return policy | privacy policy
+                    a(href='merch-email.html')
+      #page-footer
+    #footer
+      include common/footer
+  include common/scripts

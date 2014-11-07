@@ -1,0 +1,54 @@
+include ../common/settings
+a(name="top")
+header
+  img.logo(src=logo, alt='San Francisco Eagle', width='200', height='200')
+
+nav
+  ul
+    li.thisweek
+      a.button(href='#events')
+        span
+          | Today
+    li
+      a.button(href='calendar.php')
+        span
+          | Calendar
+    //- li
+      a.button(href='softball.php')
+        span
+          | Softball
+          br
+          | Schedule
+    li
+      a.button(href='#instagram')
+        span
+          | Latest
+          br
+          | Pics
+    li
+      a.button(href='merch.php')
+        span
+          | Hoodies
+          br
+          | Tanks
+          br
+          | & Tees
+    li
+      a.button(href='#footer')
+        span
+          | Contact
+          br
+          | Us
+    li
+      a.button(href='jobs.php')
+        span
+          | Jobs
+    li
+      a.button(href='recommended.php')
+        span
+          | We
+          br
+          | Recommend
+ 
+.promo_container
+  include promo-db-loop.php

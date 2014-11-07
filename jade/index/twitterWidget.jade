@@ -1,0 +1,64 @@
+script(src="http://widgets.twimg.com/j/2/widget.js")
+
+script.
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 6000,
+      width: 300,
+      height: 300,
+      theme: {
+        shell: {
+          background: 'transparent',
+          color: '#333'
+        },
+        tweets: {
+          background: 'transparent',
+          color: '#333',
+          links: '#c10000'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: false,
+        hashtags: true,
+        timestamp: true,
+        avatars: false,
+        behavior: 'all'
+      }
+    }).render().setUser('1stwebdesigner').start();
+
+script.
+    new TWTR.Widget({
+      version: 2,
+      type: 'search',
+      search: 'from:dsgn_pro OR from:1stwebdesigner OR 1stwebdesigner OR 1wd',
+      interval: 6000,
+      title: 'What do they say about 1stWebdesigner',
+      subject: '1WD related tweets',
+      width: 300,
+      height: 300,
+      theme: {
+        shell: {
+          background: 'transparent',
+          color: '#333'
+        },
+        tweets: {
+          background: 'transparent',
+          color: '#333',
+          links: '#c10000'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        toptweets: true,
+        behavior: 'default'
+      }
+    }).render().start();

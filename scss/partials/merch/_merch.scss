@@ -1,0 +1,54 @@
+#page.merch {
+  .samples img {
+    width: 12%;
+    height: auto;
+  }
+  .samples {
+    margin: 0 auto;
+    padding: 20px 13%;
+    @media screen and (max-width: $phone) {
+      padding: 5px 0;
+    }
+    text-align: center;
+  }
+  #hoodiequality {
+    text-align:center;
+  }
+  table {
+    display: none;
+    background-color: $base-dark;
+    margin: 10px 5%;
+  }
+  #merchemail {
+    #logo>img {
+      max-width: 100%; }
+    #logo {
+      position: absolute;
+      top: 1%;
+      left: 1%;
+      width: 20%; }
+    #content {
+      margin: 20% 0 50px 0; }
+    p {
+      max-width: 60%;
+      margin: 20px auto;
+      text-align: center;
+      @media screen and (max-width: $tablet) {
+          font-size: 1.5em;
+      }
+      @media screen and (max-width: $netbook) {
+          font-size: 1.5em;
+      }
+    }
+  }
+  div.rc {
+    border: solid 5px yellow;
+    max-width: 100px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    margin: 50px auto;
+    &:hover {
+      border: solid 5px red; }
+  }
+}

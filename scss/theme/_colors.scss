@@ -1,0 +1,35 @@
+// Colors
+$base-lite: #ccc;
+$base-medium: #999;
+$base-dark: #000;
+$base-highlight: #099;
+$decor-lite: #f00;
+$decor-medium: #c00;
+$decor-dark: #600;
+$decor-highlight: #01FE45;
+$content-lite: aliceblue;
+$content-medium: #b00;
+$content-dark: #999;
+$content-highlight: #099;
+
+$box-shadow: rgba(#555, 0.5);
+
+body {
+  background: #000000 url("../images/backgrounds/gun_metal.png") repeat;
+  color: $content-lite;
+}
+#footer {
+    background-color: $decor-dark;
+}
+.button {
+  background-color: $decor-dark;
+  &:hover {
+    background-color: $decor-medium;
+  }
+}
+.longbutton {
+  background-color: $decor-dark;
+  &:hover {
+    background-color: $decor-medium;
+  }
+}

@@ -1,0 +1,39 @@
+nav {
+  display: inline-block;
+  padding: 0;
+  @media screen and (max-width:$phone) {
+    padding: 0;
+  }
+  a.button {
+    margin: 0px 0;
+    padding: 0px 0 0 2px;
+    @media screen and (max-width:$phone) {
+      margin:0;
+      padding:0;
+    }
+    border-radius: 40px;
+    background-color: $decor-dark;
+    // background-image: url("../images/logo-button.png");
+    &:hover {
+    //   background-image: url("../images/logo-button-hover.png");
+    background-color: $decor-medium;
+    }
+    span {
+      font-family: "Coming Soon";
+      font-size: .7em;
+      @media screen and (max-width:$phone) {
+        font-size: .7rem;
+      }
+      font-weight: 800;
+      text-shadow: 1px 2px 4px $decor-dark;
+    }
+  }
+  ul {
+    li.thisweek {
+      display: none;
+      @media screen and (max-width:$netbook) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/* lightbox */
+
+#lightbox img {
+  width: inherit;
+  max-height: 560px;
+}
+.lb-container {
+  padding: 0;
+}
+#lightbox .lb-close {
+  visibility: hidden; }
+
+.lb-outerContainer, .lb-dataContainer {
+  background-color: black; }
+
+@media screen and (max-width: $netbook) {
+  .lb-outerContainer {
+    max-width: 900px;
+    max-height: 440px;
+    img {
+      max-width: 980px;
+      max-height: 440px; } }
+  .lb-dataContainer {
+    max-width: 650px; }
+  }
+@media screen and (max-width: $tablet) {
+  .lb-outerContainer {
+    max-width: 600px;
+    max-height: 800px;
+    img {
+      max-width: 580px;
+      max-height: 780px; } }
+  .lb-dataContainer {
+    max-width: 450px; }
+  }
+
+@media screen and (max-width: $phone) {
+  .lb-outerContainer {
+    max-width: 290px;
+    max-height: 380px;
+    img {
+      max-width: 290px;
+      max-height: 380px; } }
+  .lb-dataContainer {
+    max-width: 220px; } 
+}
+

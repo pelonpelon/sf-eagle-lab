@@ -1,0 +1,10 @@
+<?php
+  date_default_timezone_set('America/Los_Angeles');
+  $local_time_zone_factor = trim(date('O', strtotime("now")), "-0");
+  global $now;
+  $now = time();
+  require('wp/wp-blog-header.php');
+?>
+<!DOCTYPE html><html><head><title><?php bloginfo('name'); ?></title><meta http-equiv="Content-Type" content="text/html" charset="utf-8"><meta name="viewport" content="width=device-width, minimum-scale=1.0, target-densityDpi=160"><link rel="stylesheet" href="css/main.css"><link rel="prefetch" href="images/logo.svg"><link rel="prefetch font/woff" href="//themes.googleusercontent.com/static/fonts/comingsoon/v3/myblyOycMnPMGjfPG-DzP4bN6UDyHWBl620a-IRfuBk.woff" type="text/css"><link rel="prefetch font/woff" href="//themes.googleusercontent.com/static/fonts/jollylodger/v1/RX8HnkBgaEKQSHQyP9itiXhCUOGz7vYGh680lGh-uXM.woff" type="text/css"><link rel="apple-touch-icon" href="images/icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png"><link rel="apple-touch-icon" sizes="114x114" href="images/icons/touch-icon-iphone-retina.png"><link rel="apple-touch-icon" sizes="144x144" href="images/icons/touch-icon-ipad-retina.png"><!-- [if gte IE 9]--><style type="text/css">.gradient {
+   filter: none;
+}</style><!-- [endif]--></head><body><!-- hello --><!-- #background--></body></html>

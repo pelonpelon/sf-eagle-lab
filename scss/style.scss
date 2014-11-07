@@ -1,0 +1,66 @@
+
+t_col {
+  font-size: 14px;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+_c {
+  text-align: center;
+}
+
+#header {
+  background-image: url(header.png);
+  background-repeat: no-repeat;
+  height: 156px;
+  width: 750px;
+  h1 {
+    position: relative;
+    left: 30px;
+    top: 25px;
+    color: #F6F6F6;
+    text-align: center;
+    font-size: 40px;
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+  h2 {
+    position: relative;
+    left: 30px;
+    top: 21px;
+    color: #2C2C2C;
+    text-align: center;
+    font-size: 14px;
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+}
+
+#bar {
+  background-image: url(bar.png);
+  background-repeat: no-repeat;
+  height: 105px;
+  width: 750px;
+  line-height: 55px;
+  padding-left: 200px;
+  padding-right: 20px;
+  .link {
+    float: left;
+    text-align: center;
+    height: 55px;
+    &:hover {
+      background-image: url(linkrollover.png);
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  }
+}
+
+.dougemail {
+  width: 30%;
+  font-family: "Coming Soon";
+  a {
+    color: red;
+  }
+}
+.tnl_only {
+  display:  none;
+}

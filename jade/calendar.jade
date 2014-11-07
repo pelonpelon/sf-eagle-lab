@@ -1,0 +1,43 @@
+include common/header
+  #root
+    #page.simple.calendar
+      a(href=homePage)
+        img.logo(src=logo, alt='logo')
+      .content
+        header
+          span EAGLE CALENDAR
+        section
+            nav
+              ul
+                li
+                  .thumb
+                    a(href="#")
+                      img.music(src="images/icons/TNL-button-les_paul.png", width="120", height="120", alt="Thursday Night Live Button")
+                li
+                  .thumb
+                    a(href="#")
+                      img.bears(src="images/icons/calbears-button.png", width="120", height="120", alt="Bears Button")
+                li
+                  .thumb
+                    a(href="#")
+                      img.leather(src="images/icons/tom_of_finland.png", width="120", height="120", alt="Leather Button")
+                //- li
+                  //- a(href="#")
+                  //-   img.drag(src="images/icons/anaconda-ugly.png", width="120", height="120", alt="Drag Button")
+                li
+                  .thumb
+                    a(href="#")
+                      img.special(src="images/icons/icon-specialEvents.svg", width="120", height="120", alt="Special Events Button")
+        section
+          table
+            include calendar-page-loop.php
+      #page-footer
+    #footer
+      include common/footer
+    .backtothetop
+      a.button(href="#top")
+        span Back To The Top
+
+  include common/scripts
+
+  include common/scripts

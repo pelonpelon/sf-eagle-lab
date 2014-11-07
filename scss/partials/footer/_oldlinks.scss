@@ -1,0 +1,38 @@
+aside {
+  @include pie-clearfix;
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  }
+  ul.widgets {
+    @include pie-clearfix;
+    float: left;
+    margin: 0;
+    @media screen and (max-width: $phone) {
+      width: 100%;
+    }
+    li {
+      @include pie-clearfix;
+      text-align: center;
+      font-size: .8em;
+      margin: 20px 0 0 0;
+      @media screen and (max-width: $phone) {
+        float: left;
+        clear: none;
+        margin-right: 2%;
+      }
+    }
+    li:nth-of-type(2) {
+      @media screen and (max-width: $tablet) {
+        clear: left;
+      }
+      @media screen and (max-width: $phone) {
+        clear: none;
+      }
+    }
+    img.thumb {
+      display: block;
+      height: 60px;
+      width: auto;
+    }
+  }
+}

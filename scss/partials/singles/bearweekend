@@ -1,0 +1,63 @@
+.bearweekend {
+  .intro {
+    padding: 5px 0 !important;
+    p {
+      font-family: 'Coming Soon';
+      font-size:1.1em !important;
+      @media screen and (max-width: $phone) {
+        font-size:1.2em;
+      }
+    }
+
+    color: #999 !important;
+    a {
+      color: $decor-medium;
+    }
+  }
+  .events {
+    height:auto;
+    margin-bottom:250px;
+    text-align:center;
+    padding: 5px 0 !important;
+    @media screen and (max-width: $phone) {
+      margin: 0;
+    }
+    margin: 0 0 60px 30px;
+    .event {
+      display:inline-block;
+      width:20%;
+      vertical-align:top;
+      height:auto;
+      @media screen and (max-width: $phone) {
+        width:24%;
+      }
+      overflow:hidden;
+      padding-bottom:3%;
+      .title {
+        font-size:1em;
+        @media screen and (max-width: $phone) {
+          font-size:.8em;
+        }
+        display:block;
+        vertical-align:middle;
+        text-align:center;
+        height:38px !important;
+      }
+      .thumb {
+        margin: 0;
+        float:none;
+        padding:0 !important;
+        width:100% !important;
+        img {
+          display:block;
+          margin:0 auto;
+          width: auto;
+          height: auto;
+          max-height: 100%; 
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+

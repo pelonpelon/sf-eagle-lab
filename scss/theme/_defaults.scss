@@ -1,0 +1,31 @@
+//See: http://www.websitedimensions.com/
+$max_page_width: 1280px;
+$netbook: 1025px;
+$tablet: 801px;
+$phone: 641px;
+$chiclet: 361px;
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  &:link, &:visited {
+    color: inherit; }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a>img {
+  border: solid 2px #900;
+  &:hover {
+    border-color: #f00; }
+}
+
+

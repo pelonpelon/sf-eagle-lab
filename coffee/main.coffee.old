@@ -1,0 +1,111 @@
+calendarlendarList = $("#page.calendar .list")
+# calendarMonth = $("#page.calendar .month")
+
+
+# calendarMonthTables = $(".month table")
+# showit = (table) ->
+  # table.hidden = true
+# showit table for table in calendarMonthTables
+
+# monthNames = [ 1: "January", "February", "March", "April", "May", "June",
+               # "July", "August", "September", "October", "November", "December" ]
+
+# displayMonthCalendar = () ->
+#   calendarMonth.css display: "none"
+#   calendarMonthTables[0].hidden = false
+
+#   d = new Date()
+#   thisMonthNum = d.getMonth()
+#   thisYearNum = d.getFullYear()
+
+#   previousMonth = calendarMonth.find ".previousmonth"
+#   currentMonth = calendarMonth.find ".currentmonth"
+#   currentYear = calendarMonth.find ".currentyear"
+#   nextMonth = calendarMonth.find ".nextmonth"
+
+#   listButton = $("#page.calendar .listbutton")
+#   listButton.click ->
+#     calendarMonth.fadeOut 500
+#     calendarList.fadeIn 500
+#     return
+
+  # i=0
+  # m=thisMonthNum
+  # y=thisYearNum
+  # nextMonth.click ->
+  #   if i < calendarMonthTables.length-1
+  #     m++
+  #     if m == 13
+  #       m = 1
+  #       y += 1
+  #     previousMonth.text(monthNames[m-1])
+  #     currentMonth.text(monthNames[m])
+  #     currentYear.text(y)
+  #     nextMonth.text(monthNames[m+1])
+  #     calendarMonthTables[i].hidden = true
+  #     calendarMonthTables[i+1].hidden = false
+  #     i++
+  # previousMonth.click ->
+  #   if i>0
+  #     m--
+  #     if m == 0
+  #       m = 12
+  #       y -= 1
+  #     previousMonth.text(monthNames[m-1])
+  #     currentMonth.text(monthNames[m])
+  #     currentYear.text(y)
+  #     nextMonth.text(monthNames[m+1])
+  #     calendarMonthTables[i].hidden = true
+  #     calendarMonthTables[i-1].hidden = false
+  #     i--
+
+# Calendar filtering
+
+calendar_button_bright = "1"
+calendar_button_dim = "0.5"
+
+$c = $("#page.calendar")
+$l = $c.find ".list"
+$n = $c.find "nav"
+$i = $n.find("img")
+$tr = $c.find "tr"
+
+$i.css opacity: calendar_button_dim
+# $("#page.calendar .monthbutton").css opacity: calendar_button_bright
+
+filter_calendar = (crowd) ->
+  $i.filter("." + crowd).click (e) ->
+    e.preventDefault()
+
+    this_button_opacity = $(this).css "opacity"
+    $i.css opacity: calendar_button_dim
+    # $("#page.calendar .monthbutton").css opacity: calendar_button_bright
+
+    if this_button_opacity == calendar_button_bright
+      $tr.each ->
+        $(this).fadeIn 500
+      $i.each ->
+        $(this).css opacity: calendar_button_dim
+        # $("#page.calendar .monthbutton").css opacity: calendar_button_bright
+
+    else
+      $i.each ->
+        $(this).css opacity: calendar_button_dim
+        # $("#page.calendar .monthbutton").css opacity: calendar_button_bright
+      $(this).css opacity: calendar_button_bright
+      $tr.each ->
+        $(this).fadeIn 100
+        $(this).fadeOut 500  unless $(this).hasClass(crowd)
+
+  # monthButton = $("#page.calendar .monthbutton_img")
+  # monthButton.click ->
+  #   calendarList.fadeOut 500
+  #   calendarMonth.fadeIn 500
+    # return
+
+filter_calendar "music"
+filter_calendar "bears"
+filter_calendar "leather"
+filter_calendar "drag"
+filter_calendar "monthbutton"
+# displayMonthCalendar()

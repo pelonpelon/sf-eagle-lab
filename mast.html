@@ -1,0 +1,41 @@
+
+<header><img src="images/logo.svg" alt="logo" width="200" height="200" class="logo"/></header>
+<nav>
+  <ul>
+    <li class="thisweek"><a href="#events" class="button"><span>This<br/>Week</span></a></li>
+    <li><a href="calendar.php" class="button"><span>Calendar</span></a></li>
+    <li><a href="#instagram" class="button"><span>Latest<br/>Pics</span></a></li>
+    <li><a href="merch.php" class="button"><span>Hoodies<br/>Tanks<br/>& Tees</span></a></li>
+    <li><a href="#footer" class="button"><span>Contact<br/>Us</span></a></li>
+    <li><a href="jobs.php" class="button"><span>Jobs</span></a></li>
+  </ul>
+</nav>
+<div class="promo_container"><?php
+    global $post;
+    $category_id = get_cat_ID('Add to sidebar');
+    $args = array(
+    'category'      => $category_id,
+    'orderby'       => 'post_date',
+    'order'         => 'DESC',
+    'post_type'     => 'post',
+    'post_status'   => 'scheduled',
+    'numberposts'   => 2
+    );
+    $custom_posts = get_posts($args);
+    foreach($custom_posts as $post)
+    {
+      if ( !$custom_posts ) { continue; }
+
+      setup_postdata($post);
+      if ( $post->post_status == "draft" ) { continue; }
+      if ( $post->post_status == "private" ) { continue; }
+      if ( $post->post_status == "archived" ) { continue; }
+      include 'includes/timegames.php';
+      ?>
+      <section class="promo" style="display: block;">
+          <div class="with_thumbnail"><?php
+          the_content();?>
+      </section><?php
+    }?>
+
+</div>

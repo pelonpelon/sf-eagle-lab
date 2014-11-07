@@ -1,0 +1,15 @@
+include ../common/header
+  #root
+    #page.simple.recommended
+      a(href=homePage)
+        img.logo(src=logo, alt='logo')
+      .content
+        header.cf
+          span •RECOMMENDED•
+        section
+          include recommended-db-loop.php
+      #page-footer
+    #footer
+      include ../common/footer
+  include ../common/scripts
+

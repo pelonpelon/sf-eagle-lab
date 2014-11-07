@@ -1,0 +1,187 @@
+#page.calendar {
+  .content {
+    @media screen and (max-width: $phone) {
+      padding-top: 0;
+    }
+    header {
+      @media screen and (max-width: $phone) {
+        padding-bottom: 0;
+      }
+    }
+    section {
+      text-align:center;
+      @media screen and (max-width: $phone) {
+        padding-bottom: 0;
+      }
+      nav {
+        ul {
+          li {
+            display:inline-block;
+            width:24%;
+            max-width: 120px;
+            @media screen and (max-width: $tablet) {
+              max-width: 100px;
+            }
+            @media screen and (max-width: $phone) {
+              max-width: 80px;
+            }
+            .thumb {
+              float:none;
+              width:auto;
+              padding:0;
+              img {
+                background-color: $decor-dark;
+                border: solid 5px $decor-medium;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+      table {
+        margin:0 auto;
+        tr {
+          td {
+            border: 2px #000000 solid;
+            text-align: center;
+            vertical-align: middle;
+            height: 100px;
+            @media screen and (max-width: $phone) {
+              height: 0;
+            }
+            p {
+              padding: 0;
+            }
+            hr {
+              border-color:$base-dark;
+            }
+          }
+          td:first-of-type {
+            width: 30%;
+            background-color: $decor-dark;
+            .bigdate {
+              font-size: 9em;
+              font-weight: 900;
+              display: block;
+            }
+            @media screen and (max-width: $phone) {
+              .bigdate {
+                font-size: 4em;
+              }
+                font-size: 1rem;
+              sup {
+                font-size:.6rem;
+              }
+              .time {
+                font-size:.7rem;
+              }   
+            }
+          }
+          td+td {
+            font-family: $tnl-font;
+            width: 30%;
+            background-color: $content-dark;
+            color: #000000;
+            font-size: 2em;
+            @media screen and (max-width: $phone) {
+              font-size:1.2rem !important;
+            }
+            font-weight: 800;
+            a:hover {
+              color: $decor-medium;
+            }
+            .event-title {
+              padding: 1em 0;
+            }
+            .thumb-caption{
+              display: block;
+              margin: 0 5px;
+              line-height: 1em;
+              font-family: $content-font;
+              font-weight: 900;
+              font-size: .5em;
+              color: $content-lite;
+            }
+            .dj-name {
+              display: block;
+              margin: 8px 0 0 0;
+              line-height: 1.1em;
+              font-family: $content-font;
+              font-weight: 600;
+              font-size: .6em;
+              font-variant: small-caps;
+              color: $decor-dark;
+            }
+            .promoter {
+              display: block;
+              padding: 10px 0 20px 0;
+              font-family: sans-serif;
+              font-size: 0.7em;
+              font-variant: small-caps;
+              line-height: 1em;
+            }
+            a {
+              display: block;
+            }
+            >a {
+              background-color: #bbb;
+            }
+            a+a {
+              background-color: #999;
+            }
+            a+a+a {
+              background-color: #777;
+            }
+            a+a+a+a {
+              background-color: #666;
+            }
+            a+a+a+a {
+              background-color: #555;
+            }
+            a+a+a+a+a {
+              background-color: #444;
+            }
+          }
+          td+td+td {
+            background-color: $decor-dark;
+            .thumb {
+              float:none;
+              margin:0 auto;
+              width:100%;  
+              max-width: 180px;
+              padding:0;
+              @media screen and (max-width: $tablet) {
+                width: 95%;
+              }
+              height: auto;
+              border: 0;
+              vertical-align: middle;
+            }
+            .youtube {
+              width:30%; 
+              margin:0 auto;
+              @media screen and (max-width: $tablet) {
+                width:50%;
+              }
+              @media screen and (max-width: $netbook) {
+                width:95%;
+              }
+            }
+            img {
+              padding:0;
+            }
+          }
+        }
+        tr.month {
+          td {
+            font-family: $tnl-font;
+            font-size: 3em !important;
+            color: $decor-medium;
+            background-color: rgba(0,0,0,0);
+            border-color: rgba(0,0,0,0);
+           }
+        }
+      }
+    }
+  }
+}

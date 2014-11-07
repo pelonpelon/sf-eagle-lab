@@ -1,0 +1,149 @@
+#events {
+  .day {
+    h3 {
+      margin: 30px 0 0 0;
+      padding: 12px 4px 1px 4px;
+      background-color: #444;
+      border-top-radius: 15px;
+      font-variant: small-caps;
+      font-size: 4rem;
+      font-family: "Impact", "Futura-CondensedExtraBold", sans-serif;
+    }
+    sup {
+      display:none;
+      font: 1rem "Tahoma";
+    }
+  }
+  .event {
+    margin-bottom: 0;
+    background-color: #282828;
+    border-bottom-radius: 0;
+    li {
+    overflow: hidden;
+    }
+    p {
+    padding: 0 0;
+    font-size: 1.3em;
+    margin: 5px 0 0 0;
+    text-align: center;
+    }
+    .time {
+      float:left;
+      width:100%;
+      font-size: .8em;
+      font-weight: 800;
+      color: #999;
+      clear: left;
+      text-align:left;
+      margin-bottom: 2px;
+      @media screen and (max-width: $tablet) {
+        font-size: 1em;
+      }
+    }
+    .price {
+      padding-left: 10px;
+      color: $content-dark;
+      font-weight: 100;
+    }
+  }
+    .event-list {
+      float:left;
+      width:63%;
+      padding:5px;
+      height: 100%;
+      text-align: center;
+      .button, .buttonless {
+        display: block;
+        height: auto;
+        min-height: 60px;
+        width:100%;
+        color:#DFAE48;
+      }
+      .event-title {
+        font-weight:700;
+        padding: 1em 0;
+      }
+      img {
+        display: block;
+        margin: 5% auto;
+        width: inherit;
+        max-width: 80%;
+      }
+    }
+    .promoter {
+      font-family: "Bitstream Charter";
+      display: block;
+      text-align: center;
+      font-size: .8em;
+      padding: 12px 0 8px 0;
+    }
+    .dj-name {
+      font-size: .7em;
+      font-wight: 500;
+      color:#CF9E38;
+      display: block;
+    }
+    .flyer-thumb {
+      float: right;
+      width: 30%;
+      min-height: 60px;
+      margin: 7px 0 20px 0;
+    }
+    .youtubePlaylistIcon {
+      float: right;
+      width: 30%;
+      min-height: 60px;
+    }
+    .button, .buttonless {
+      float: left;
+      font-size: 1.3em;
+      @media screen and (max-width: $netbook) {
+        width: 100%;
+        padding: 10px 0;
+      }
+      @media screen and (max-width: $phone) {
+        padding: 12px 0;
+      }
+    }
+    .buttonless {
+      font-size: 1.1em;
+    }
+    .tnl {
+      font-family: $tnl-font, cursive;
+      font-size: 1.5em;
+      .buttonless {
+        background-color: $decor-dark;
+      }
+    }
+  .to-calendar {
+    float: none;
+    margin: 0 auto 20px auto;
+    /* margin: 20px 0 0 0; */
+    width: 80%;
+    height: 80px;
+    border-radius: 50px;
+    /* padding: 12px 4px 1px 4px; */
+    /* background-color: #444; */
+    /* @include opacity(0.9); */
+    /* @include border-top-radius(0px); */
+    /* @include border-bottom-radius(15px); */
+    /* text-align: right; */
+  }
+  @media screen and (max-width: $tablet) {
+    clear: both;
+    width: 60%;
+    margin: 60px 20%;
+    .flexslider .slides {
+      zoom: .5;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    width: 100%;
+    clear: left;
+    margin: 0 0;
+    ul ul li {
+      max-width: 100%;
+      font-size: 1em;
+    }
+  }
+}

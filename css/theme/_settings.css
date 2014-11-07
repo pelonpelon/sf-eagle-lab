@@ -1,0 +1,29 @@
+/* line 24, ../../scss/theme/_settings.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 29, ../../scss/theme/_settings.scss */
+a {
+  text-decoration: none;
+}
+/* line 31, ../../scss/theme/_settings.scss */
+a:link, a:visited {
+  color: inherit;
+}
+
+/* line 35, ../../scss/theme/_settings.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 40, ../../scss/theme/_settings.scss */
+a > img {
+  border: solid 2px #900;
+}
+/* line 42, ../../scss/theme/_settings.scss */
+a > img:hover {
+  border-color: #f00;
+}

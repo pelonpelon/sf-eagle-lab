@@ -1,0 +1,26 @@
+include common/header
+
+  a(name="top")
+  #root
+    #page.index
+      a(name="mast")
+      #mast
+        include index/mast
+      a(name="tease")
+      #tease
+        include index/tease
+      a(name="events")
+      #events
+        include index/events
+      #pics
+      a(name="instagram")
+          include ../jade/index/tumblr-loop.php
+      #page-footer
+    a(name="footer")
+    #footer
+      include common/footer
+    .backtothetop
+      a.button(href="#top")
+        span Back To The Top
+
+  include common/scripts

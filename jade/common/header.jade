@@ -1,0 +1,33 @@
+include settings
+include wordpress.php
+
+doctype html
+html
+  head
+    title
+      | <?php bloginfo('name'); ?>
+    meta(http-equiv='Content-Type', content='text/html', charset='utf-8')
+    //-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    meta(name="viewport", content="width=device-width, minimum-scale=1.0, target-densityDpi=160")
+    //-When safari/chrome link saved to home screen, when it opens it opens full screen
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="mobile-web-app-capable", content="yes")
+    meta(name="twitter:widgets:csp", content="on")
+    //-FIXX try to get rid of the wp.css file (where does normalize come from?
+    //-link(rel='stylesheet', href='css/wp.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='prefetch', href='images/logo.svg')
+    //- link(href='http://fonts.googleapis.com/css?family=Jolly+Lodger|Coming+Soon|Rouge+Script', rel='stylesheet', type='text/css')
+    link(rel='prefetch font/woff', href='//themes.googleusercontent.com/static/fonts/comingsoon/v3/myblyOycMnPMGjfPG-DzP4bN6UDyHWBl620a-IRfuBk.woff', type='text/css')
+    link(rel='prefetch font/woff', href='//themes.googleusercontent.com/static/fonts/jollylodger/v1/RX8HnkBgaEKQSHQyP9itiXhCUOGz7vYGh680lGh-uXM.woff', type='text/css')
+    link(rel='apple-touch-icon', href='images/icons/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='images/icons/touch-icon-ipad.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='images/icons/touch-icon-iphone-retina.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='images/icons/touch-icon-ipad-retina.png')
+
+    include IE
+
+  body
+
+    | <!-- hello -->
+    // #background

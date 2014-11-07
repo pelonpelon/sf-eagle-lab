@@ -1,0 +1,36 @@
+.button, .buttonless {
+  display: table;
+  width: 70px;
+  height: 70px;
+  margin: 1px;
+  border-radius: 4px;
+}
+
+.button>span, .buttonless>span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.longbutton, .longbuttonless {
+  display: table;
+  width: auto;
+  height: auto;
+  margin: 1px;
+  padding:0 4px;
+  border-radius: 4px;
+}
+
+.longbutton>span, .longbuttonless>span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}

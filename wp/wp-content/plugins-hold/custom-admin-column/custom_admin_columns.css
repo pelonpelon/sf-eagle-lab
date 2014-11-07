@@ -1,0 +1,7 @@
+table.fixed {
+    table-layout: auto;
+}
+
+.column-children ul{list-style-type:disc;padding:0 0 0 20px;margin:0;}
+.column-children ul li{margin:0;}
+.column-children ul li a{font-size:0.9em;}

@@ -1,0 +1,47 @@
+// Breakpoints
+// see: http://www.websitedimensions.com/
+
+$max_page_width: 1280px;
+$netbook: 1080;
+$tablet: 800px;
+$phone: 640px;
+$chiclet: 320px;
+
+// Colors
+$base-lite: #ccc;
+$base-medium: #999;
+$base-dark: #000;
+$base-highlight: #099;
+$decor-lite: #f00;
+$decor-medium: #c00;
+$decor-dark: #600;
+$decor-highlight: #F8F800;
+// $decor-highlight: #099;
+$content-lite: #f5f5f5;
+$content-medium: #ccc;
+$content-dark: #999;
+$content-highlight: #099;
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  &:link, &:visited {
+    color: inherit; }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a>img {
+  border: solid 2px #900;
+  &:hover {
+    border-color: #f00; }
+}
+
+

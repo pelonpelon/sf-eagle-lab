@@ -1,0 +1,30 @@
+include common/header
+  #root
+    #page.simple.jobs
+      a(href=homePage)
+        img.logo(src=logo, alt='logo')
+      .content
+        header.cf
+          span We are accepting applications for employment
+        section
+          article
+            p
+              a(href='sfe_application.pdf', target='_blank')
+                img(src='download_pdf_button.png', height='34', width='130', alt='')
+            br
+            p
+              | *all applicants must complete L.E.A.D. training with the California ABC (Alcoholic Beverage Control)
+            p 
+              | LEAD training courses are available through the ABC at no charge.
+            p
+              | More information available on the ABC website
+              a.longbutton(href='http://www.abc.ca.gov/programs/lead.html', target='_blank')
+                span abc.ca.gov
+            p
+              | Send your application along with a cover letter to:
+              a.longbutton(href='mailto:info@sf-eagle.com', target='_blank')
+                span info@sf-eagle.com
+      #page-footer
+    #footer
+      include common/footer
+  include common/scripts

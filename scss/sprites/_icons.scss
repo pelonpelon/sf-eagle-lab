@@ -1,0 +1,220 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$icons-sprite-base-class: ".icons-sprite" !default;
+$icons-sprite-dimensions: false !default;
+$icons-position: 0% !default;
+$icons-spacing: 0 !default;
+$icons-repeat: no-repeat !default;
+$icons-prefix: '' !default;
+$icons-clean-up: true !default;
+$icons-layout:vertical !default;
+$icons-inline: false !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $icons-TNL-button-les_paul-hover-position: $icons-position !default;
+   $icons-TNL-button-les_paul-hover-spacing:  $icons-spacing !default;
+   $icons-TNL-button-les_paul-hover-repeat:   $icons-repeat !default;
+ 
+   $icons-TNL-button-les_paul-position: $icons-position !default;
+   $icons-TNL-button-les_paul-spacing:  $icons-spacing !default;
+   $icons-TNL-button-les_paul-repeat:   $icons-repeat !default;
+ 
+   $icons-anaconda-ugly-position: $icons-position !default;
+   $icons-anaconda-ugly-spacing:  $icons-spacing !default;
+   $icons-anaconda-ugly-repeat:   $icons-repeat !default;
+ 
+   $icons-apple-touch-icon-57x57-position: $icons-position !default;
+   $icons-apple-touch-icon-57x57-spacing:  $icons-spacing !default;
+   $icons-apple-touch-icon-57x57-repeat:   $icons-repeat !default;
+ 
+   $icons-calbears-button-position: $icons-position !default;
+   $icons-calbears-button-spacing:  $icons-spacing !default;
+   $icons-calbears-button-repeat:   $icons-repeat !default;
+ 
+   $icons-calendarmonth-position: $icons-position !default;
+   $icons-calendarmonth-spacing:  $icons-spacing !default;
+   $icons-calendarmonth-repeat:   $icons-repeat !default;
+ 
+   $icons-email-position: $icons-position !default;
+   $icons-email-spacing:  $icons-spacing !default;
+   $icons-email-repeat:   $icons-repeat !default;
+ 
+   $icons-facebook-position: $icons-position !default;
+   $icons-facebook-spacing:  $icons-spacing !default;
+   $icons-facebook-repeat:   $icons-repeat !default;
+ 
+   $icons-frame-position: $icons-position !default;
+   $icons-frame-spacing:  $icons-spacing !default;
+   $icons-frame-repeat:   $icons-repeat !default;
+ 
+   $icons-google-plus-icon-position: $icons-position !default;
+   $icons-google-plus-icon-spacing:  $icons-spacing !default;
+   $icons-google-plus-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-list-position: $icons-position !default;
+   $icons-list-spacing:  $icons-spacing !default;
+   $icons-list-repeat:   $icons-repeat !default;
+ 
+   $icons-tom_of_finland-position: $icons-position !default;
+   $icons-tom_of_finland-spacing:  $icons-spacing !default;
+   $icons-tom_of_finland-repeat:   $icons-repeat !default;
+ 
+   $icons-touch-icon-ipad-retina-position: $icons-position !default;
+   $icons-touch-icon-ipad-retina-spacing:  $icons-spacing !default;
+   $icons-touch-icon-ipad-retina-repeat:   $icons-repeat !default;
+ 
+   $icons-touch-icon-ipad-position: $icons-position !default;
+   $icons-touch-icon-ipad-spacing:  $icons-spacing !default;
+   $icons-touch-icon-ipad-repeat:   $icons-repeat !default;
+ 
+   $icons-touch-icon-iphone-retina-position: $icons-position !default;
+   $icons-touch-icon-iphone-retina-spacing:  $icons-spacing !default;
+   $icons-touch-icon-iphone-retina-repeat:   $icons-repeat !default;
+ 
+   $icons-touch-icon-iphone-position: $icons-position !default;
+   $icons-touch-icon-iphone-spacing:  $icons-spacing !default;
+   $icons-touch-icon-iphone-repeat:   $icons-repeat !default;
+ 
+   $icons-twitter-position: $icons-position !default;
+   $icons-twitter-spacing:  $icons-spacing !default;
+   $icons-twitter-repeat:   $icons-repeat !default;
+ 
+   $icons-youtube-icon-position: $icons-position !default;
+   $icons-youtube-icon-spacing:  $icons-spacing !default;
+   $icons-youtube-icon-repeat:   $icons-repeat !default;
+ 
+
+ $icons-sprites: sprite-map("icons/*.png",
+ 
+   $icons-TNL-button-les_paul-hover-position: $icons-TNL-button-les_paul-hover-position, 
+   $icons-TNL-button-les_paul-hover-spacing:  $icons-TNL-button-les_paul-hover-spacing, 
+   $icons-TNL-button-les_paul-hover-repeat:   $icons-TNL-button-les_paul-hover-repeat,
+ 
+   $icons-TNL-button-les_paul-position: $icons-TNL-button-les_paul-position, 
+   $icons-TNL-button-les_paul-spacing:  $icons-TNL-button-les_paul-spacing, 
+   $icons-TNL-button-les_paul-repeat:   $icons-TNL-button-les_paul-repeat,
+ 
+   $icons-anaconda-ugly-position: $icons-anaconda-ugly-position, 
+   $icons-anaconda-ugly-spacing:  $icons-anaconda-ugly-spacing, 
+   $icons-anaconda-ugly-repeat:   $icons-anaconda-ugly-repeat,
+ 
+   $icons-apple-touch-icon-57x57-position: $icons-apple-touch-icon-57x57-position, 
+   $icons-apple-touch-icon-57x57-spacing:  $icons-apple-touch-icon-57x57-spacing, 
+   $icons-apple-touch-icon-57x57-repeat:   $icons-apple-touch-icon-57x57-repeat,
+ 
+   $icons-calbears-button-position: $icons-calbears-button-position, 
+   $icons-calbears-button-spacing:  $icons-calbears-button-spacing, 
+   $icons-calbears-button-repeat:   $icons-calbears-button-repeat,
+ 
+   $icons-calendarmonth-position: $icons-calendarmonth-position, 
+   $icons-calendarmonth-spacing:  $icons-calendarmonth-spacing, 
+   $icons-calendarmonth-repeat:   $icons-calendarmonth-repeat,
+ 
+   $icons-email-position: $icons-email-position, 
+   $icons-email-spacing:  $icons-email-spacing, 
+   $icons-email-repeat:   $icons-email-repeat,
+ 
+   $icons-facebook-position: $icons-facebook-position, 
+   $icons-facebook-spacing:  $icons-facebook-spacing, 
+   $icons-facebook-repeat:   $icons-facebook-repeat,
+ 
+   $icons-frame-position: $icons-frame-position, 
+   $icons-frame-spacing:  $icons-frame-spacing, 
+   $icons-frame-repeat:   $icons-frame-repeat,
+ 
+   $icons-google-plus-icon-position: $icons-google-plus-icon-position, 
+   $icons-google-plus-icon-spacing:  $icons-google-plus-icon-spacing, 
+   $icons-google-plus-icon-repeat:   $icons-google-plus-icon-repeat,
+ 
+   $icons-list-position: $icons-list-position, 
+   $icons-list-spacing:  $icons-list-spacing, 
+   $icons-list-repeat:   $icons-list-repeat,
+ 
+   $icons-tom_of_finland-position: $icons-tom_of_finland-position, 
+   $icons-tom_of_finland-spacing:  $icons-tom_of_finland-spacing, 
+   $icons-tom_of_finland-repeat:   $icons-tom_of_finland-repeat,
+ 
+   $icons-touch-icon-ipad-retina-position: $icons-touch-icon-ipad-retina-position, 
+   $icons-touch-icon-ipad-retina-spacing:  $icons-touch-icon-ipad-retina-spacing, 
+   $icons-touch-icon-ipad-retina-repeat:   $icons-touch-icon-ipad-retina-repeat,
+ 
+   $icons-touch-icon-ipad-position: $icons-touch-icon-ipad-position, 
+   $icons-touch-icon-ipad-spacing:  $icons-touch-icon-ipad-spacing, 
+   $icons-touch-icon-ipad-repeat:   $icons-touch-icon-ipad-repeat,
+ 
+   $icons-touch-icon-iphone-retina-position: $icons-touch-icon-iphone-retina-position, 
+   $icons-touch-icon-iphone-retina-spacing:  $icons-touch-icon-iphone-retina-spacing, 
+   $icons-touch-icon-iphone-retina-repeat:   $icons-touch-icon-iphone-retina-repeat,
+ 
+   $icons-touch-icon-iphone-position: $icons-touch-icon-iphone-position, 
+   $icons-touch-icon-iphone-spacing:  $icons-touch-icon-iphone-spacing, 
+   $icons-touch-icon-iphone-repeat:   $icons-touch-icon-iphone-repeat,
+ 
+   $icons-twitter-position: $icons-twitter-position, 
+   $icons-twitter-spacing:  $icons-twitter-spacing, 
+   $icons-twitter-repeat:   $icons-twitter-repeat,
+ 
+   $icons-youtube-icon-position: $icons-youtube-icon-position, 
+   $icons-youtube-icon-spacing:  $icons-youtube-icon-spacing, 
+   $icons-youtube-icon-repeat:   $icons-youtube-icon-repeat,
+ 
+ $layout: $icons-layout,
+ $cleanup: $icons-clean-up
+ );
+
+
+// All sprites should extend this class
+// The icons-sprite mixin will do so for you.
+@if $icons-inline {
+  #{$icons-sprite-base-class} {
+    background-image: inline-sprite($icons-sprites);
+  } 
+} @else {
+  #{$icons-sprite-base-class} {
+    background: $icons-sprites no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function icons-sprite-width($name) {
+    $file: sprite_file($icons-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function icons-sprite-height($name) {
+    $file: sprite_file($icons-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin icons-sprite-dimensions($name) {
+  @include sprite-dimensions($icons-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin icons-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($icons-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin icons-sprite($name, $dimensions: $icons-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$icons-sprite-base-class};
+  @include sprite($icons-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin icons-sprites($sprite-names, $dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($icons-sprites, $sprite-names, $icons-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-icons-sprites($dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0) {
+  @include icons-sprites(TNL-button-les_paul-hover TNL-button-les_paul anaconda-ugly apple-touch-icon-57x57 calbears-button calendarmonth email facebook frame google-plus-icon list tom_of_finland touch-icon-ipad-retina touch-icon-ipad touch-icon-iphone-retina touch-icon-iphone twitter youtube-icon, $dimensions, $prefix, $offset-x, $offset-y);
+}
